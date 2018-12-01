@@ -49,7 +49,7 @@ resource "aws_s3_bucket" "eb_s3_app_bucket" {
   bucket = "apptio-web-app-versions"
   acl    = "private"
   tags {
-    Name        = "Apptio WebApp application version"
+    Name = "Apptio WebApp application version"
   }
 }
 
