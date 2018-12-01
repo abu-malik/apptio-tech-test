@@ -12,8 +12,8 @@ aws s3 cp $artifactSource $artifact_download_path
 mkdir /tmp/apptio
 mv $artifact_download_path /tmp/apptio
 cd /tmp/apptio
-tar -xf webapp.tar.gz
-rm webapp.tar.gz
+tar -xf $artifact
+rm $artifact
 mv public/* .
 rm -r public
 
